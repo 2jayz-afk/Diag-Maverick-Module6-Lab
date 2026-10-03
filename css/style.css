@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+    color: #222;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container > p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #555;
+}
+
+.checkbox-group {
+    margin: 20px 0;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 8px;
+}
+
+.checkbox-group label {
+    display: inline;
+    font-weight: normal;
+}
+
+.error {
+    display: block;
+    color: #b00020;
+    font-size: 14px;
+    margin-top: 5px;
+    min-height: 18px;
+}
+
+.feedback {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.success {
+    color: #087f23;
+    background: #e8f5e9;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.summary {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f1f5f9;
+    border-radius: 8px;
+}
+
+.summary h2 {
+    margin-top: 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background: #2563eb;
+    color: white;
+}
+
+button[type="reset"] {
+    background: #6b7280;
+    color: white;
+}
+
+input[aria-invalid="true"],
+select[aria-invalid="true"] {
+    border: 2px solid #b00020;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
